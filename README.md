@@ -60,4 +60,4 @@ This project is open source and available under the MIT License.
 
 ## Troubleshooting
 - If the application doesn't detect the controller, ensure that SteamVR is correctly set up and the controller is paired and tracked.
-- If the OSC messages are not being sent to VRChat, verify that VRChat's OSC settings are configured to listen on the correct port (`9000` by default).
+- If the OSC messages are not being sent to VRChat, verify that VRChat's OSC setting is enabled.
