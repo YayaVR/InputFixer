@@ -5,7 +5,7 @@
 The threshold acts as a new stick tilt limit.
 For example a threshold of 0.5 now means that you reach 50% speed at 25% stick tilt, or 100% speed at 50% stick tilt. Everything before that is scaled linearly.
 
-The main use case for this app is to compensate for worn-down controller stick input. However, it also serves as a simple quality-of-life enhancement, making movement in VRChat feel more snappy and responsive. This is especially noticeable when the threshold is set low, allowing for quicker and easier acceleration to maximum speed.
+The main use case for this app is to compensate for worn-down controller stick input. However, it also serves as a simple quality-of-life enhancement, making movement in VRChat feel more snappy and responsive or just making it easier/more comfortable reaching max movement speed.
 
 [Feel free to edit/adapt this script to your needs]
 
