@@ -149,7 +149,7 @@ namespace InputFixer // By Yayabites
         static void SendMovementInput(string address, int value)
         {
             var message = new OSCMessage(address, value);
-            sender.Send(message); // Synchronous send, no need for async
+            sender.Send(message);
         }
 
         // Creates the config file with the default threshold value
