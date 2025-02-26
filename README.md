@@ -2,6 +2,8 @@
 
 **InputFixer** is a lightweight application designed assist when the left controller up/down tilt doesn't reach the intended full tilt value anymore by detecting controller tilt and when those reach a given threshold, sends movement inputs to VRChat using OSC.
 
+[Feel free to edit/adapt this script to your needs like supporting more than just vertical stick movement]
+
 ---
 
 ## Features
