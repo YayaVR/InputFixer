@@ -17,7 +17,7 @@ namespace InputFixer
         public static void SendMovementInput(string address, float value)
         {
             var message = new OSCMessage(address, value);
-            sender.Send(message); // Synchronous send, no need for async
+            sender.Send(message);
         }
     }
 }
