@@ -1,16 +1,17 @@
 # InputFixer - VR Input To VRCHAT OSC Movement Tool
 
-**InputFixer** is a lightweight application designed assist when the left controller up/down tilt doesn't reach the intended full tilt value anymore by detecting controller tilt and when those reach a given threshold, sends movement inputs to VRChat using OSC.
+**InputFixer** is a lightweight application designed assist when the left controller tilt doesn't reach the intended full tilt value anymore by detecting controller tilt and adjusting it according to a new max tilt set by the User, then sending movement inputs to VRChat using OSC. The threshold acts as a new stick tilt limit.
+For example a threshold of 0.5 now means that you reach 50% speed at 25% stick tilt, or 100% speed at 50% stick tilt. Everything before that is scaled linearly.
 
 The main use case for this app is to compensate for worn-down controller stick input. However, it also serves as a simple quality-of-life enhancement, making movement in VRChat feel more snappy and responsive. This is especially noticeable when the threshold is set low, allowing for quicker and easier acceleration to maximum speed.
 
-[Feel free to edit/adapt this script to your needs like supporting more than just vertical stick movement]
+[Feel free to edit/adapt this script to your needs]
 
 ---
 
 ## Features
 - Detects positive and negative tilt on the left VR controller.
-- Sends OSC messages to VRChat to trigger forward or backward movement.
+- Sends OSC messages to VRChat to trigger vertical/horizontal movement.
 - Adjustable threshold value to fine-tune controller sensitivity.
 - Supports any SteamVR-compatible controllers (e.g., Vive, Index, Oculus).
 - Easy configuration via a simple `config.txt` file.
