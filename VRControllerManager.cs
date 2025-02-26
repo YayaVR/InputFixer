@@ -1,4 +1,4 @@
-﻿using Valve.VR;
+using Valve.VR;
 using System;
 using System.Threading.Tasks;
 
@@ -61,13 +61,14 @@ namespace InputFixer
                         }
                         else
                         {
+                            OSCManager.SendMovementInput("/input/Vertical", 0);     // Stop movement if menu is opem
+                            OSCManager.SendMovementInput("/input/Horizontal", 0);
                             if (isMenuOpen == false)
                             {
                                 Console.WriteLine("Failed to get controller state, likely because SteamVR Menu is open");
-                                Console.WriteLine("Retrying in 5s...");
-                                isMenuOpen = true;
                             }
-                            await Task.Delay(5000);  // Retry after a delay
+                            isMenuOpen = true;
+                            await Task.Delay(1000);  // Retry after a delay
                         }
                     }
                     catch (Exception ex)
