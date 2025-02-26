@@ -1,5 +1,4 @@
-# InputFixer - VR Input To VRCHAT OSC Movement Tool
-
+# InputFixer - Tool to negate worn down stick saturation
 **InputFixer** is a lightweight application designed to assist when the left controller tilt doesn't reach the intended full tilt value anymore by detecting controller tilt and adjusting it according to a new max tilt set by the User, then sending movement inputs to VRChat using OSC.
 
 The threshold acts as a new stick tilt limit.
