@@ -57,7 +57,7 @@ namespace InputFixer
                                 Console.WriteLine("SteamVR Menu closed, Controller State retrieved.");
                                 isMenuOpen = false;
                             }
-                            ProcessVerticalMovement(controllerState, controllerState.rAxis0.y, controllerState.rAxis0.x);
+                            ProcessMovement(controllerState, controllerState.rAxis0.y, controllerState.rAxis0.x);
                         }
                         else
                         {
@@ -86,7 +86,7 @@ namespace InputFixer
             }
         }
 
-        private static void ProcessVerticalMovement(VRControllerState_t controllerState, float originalY, float originalX)
+        private static void ProcessMovement(VRControllerState_t controllerState, float originalY, float originalX)
         {
 
             // Tilt Detection Y-Axis
