@@ -11,7 +11,7 @@ The main use case for this app is to compensate for worn-down controller stick i
 ---
 
 ## Features
-- Detects tilt on the left VR controller.
+- Detects stick tilt on the left VR controller.
 - Sends OSC messages to VRChat to trigger movement in given direction.
 - Adjustable threshold value to fine-tune controller sensitivity.
 - Supports any SteamVR-compatible controllers (e.g., Vive, Index, Oculus).
