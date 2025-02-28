@@ -11,11 +11,11 @@ The main use case for this app is to compensate for worn-down controller stick i
 ---
 
 ## Features
-- Detects positive and negative tilt on the left VR controller.
-- Sends OSC messages to VRChat to trigger vertical/horizontal movement.
+- Detects tilt on the left VR controller.
+- Sends OSC messages to VRChat to trigger movement in given direction.
 - Adjustable threshold value to fine-tune controller sensitivity.
 - Supports any SteamVR-compatible controllers (e.g., Vive, Index, Oculus).
-- Easy configuration via a simple `config.txt` file.
+- Easy configuration via a simple `InputFixer_config.txt` file.
 
 ---
 
@@ -30,12 +30,11 @@ The main use case for this app is to compensate for worn-down controller stick i
 1. Download the latest release from the GitHub repository.
 2. Extract the contents of the archive to a folder.
 3. Run the `InputFixer.exe` executable to start the application.
-4. The `config.txt` file will be created automatically if it doesn't exist. You can edit this file to customize the threshold value.
 
 ---
 
 ## Configuration
-The threshold value that determines the controller tilt sensitivity can be modified in the `config.txt` file. By default, the threshold is set to `0.75`. To change it, simply open the `config.txt` file and modify the value.
+The threshold value that determines the controller tilt sensitivity/by how much to "boost" the stick input can be modified in the `InputFixer_config.txt` file. By default, the threshold is set to `0.75`. To change it, simply open the file and modify the value.
 
 ---
 
